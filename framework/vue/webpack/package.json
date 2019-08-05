@@ -1,8 +1,7 @@
 {
   "name": "iVuePack",
   "version": "0.0.1",
-  "description":
-    "Scaffold for Creating Engineering Vue.js Project with Webpack, TypeScript",
+  "description": "Scaffold for Creating Engineering Vue.js Project with Webpack, TypeScript",
   "author": "wxyyxc1992",
   "license": "MIT",
   "homepage": "https://github.com/wxyyxc1992/iVuePack",
@@ -27,8 +26,7 @@
     "dev": "npm run start",
     "start": "better-npm-run start:dll && better-npm-run start:dev",
     "build": "npm run clean && better-npm-run build",
-    "build:ssr":
-      "npm run clean && better-npm-run build:ssr && better-npm-run build:server",
+    "build:ssr": "npm run clean && better-npm-run build:ssr && better-npm-run build:server",
     "clean": "rimraf dist",
     "lint": "eslint src",
     "update": "npm-check -u",
@@ -43,8 +41,7 @@
       }
     },
     "start:dev": {
-      "command":
-        "webpack-dashboard -- node --harmony ./dev-config/server/devServer.js --host 0.0.0.0",
+      "command": "webpack-dashboard -- node --harmony ./dev-config/server/devServer.js --host 0.0.0.0",
       "env": {
         "NODE_ENV": "development"
       }
@@ -69,8 +66,15 @@
     }
   },
   "jest": {
-    "moduleFileExtensions": ["js", "jsx"],
-    "moduleDirectories": ["node_modules", "bower_components", "shared"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared"
+    ],
     "moduleNameMapper": {
       "\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js",
       "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
@@ -120,7 +124,6 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
     "lint-staged": "^4.2.1",
-    
     "object-assign": "^4.1.1",
     "offline-plugin": "^4.8.3",
     "opn": "^5.1.0",
